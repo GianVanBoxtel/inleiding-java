@@ -1,0 +1,28 @@
+package h11;
+
+import java.awt.*;
+import java.applet.*;
+
+public class Hoofdstuk11Opdracht7 extends Applet {
+
+    public void init() {
+
+    }
+
+    public void paint(Graphics g) {
+        int i = 0;
+        int x = 500;
+        int y = 300;
+        int width = 10;
+        int height = 10;
+        while (i <= 50) {
+
+            g.drawOval(x, y, width, height);
+            width += 10;
+            x -= 5;
+            y -= 5;
+            height += 10;
+            i++;
+        }
+    }
+}
